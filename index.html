@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elena Trifunoska - CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" xintegrity="sha512-papX6jZC6ZbhPZVtK6rZq7RY0NJ6giUqE6v7E7oxD0CMx7Z0nYgA5gA8X/Hb0khj0E5pYk+V0N4a+o3Ef/njlQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <!-- Script to prevent "lightning strike" on page load -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark-mode') {
+                document.body.classList.add('dark-mode');
+            }
+        })();
+    </script>
+</head>
+<body>
+    <!-- The canvas element for the background effect -->
+    <canvas id="background-canvas"></canvas>
+
+    <nav class="navbar">
+        <a href="index.html"><img src="images/home.svg" class="nav-icon"> Home</a>
+        <a href="competitions.html"><img src="images/trophy.svg" class="nav-icon"> Competitions</a>
+        <a href="projects.html"><img src="images/projects.svg" class="nav-icon"> Projects</a>
+        <a href="skills.html"><img src="images/skills.svg" class="nav-icon"> Skills</a>
+        <a href="volunteering.html"><img src="images/volunteering.svg" class="nav-icon"> Volunteering</a>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </nav>
+
+
+    <header>
+        <div class="profile-container">
+            <img src="Images/portrait.jpg" alt="Elena's Portrait" class="profile-portrait">
+        </div>
+        <h1 id="typewriter-name" data-text="Elena Trifunoska"></h1>
+        <p id="typewriter-subtitle" data-text="Student at High School 'Matematicko Informaticka Gimnazija - MIG' in Skopje, Macedonia"></p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p id="typewriter-about" data-text="I am a highly motivated student with a strong passion for STEM fields, especially programming and physics. I have an extensive background in national and international competitions, and a dedication to both academic excellence and community engagement. My goal is to leverage my skills and knowledge to solve complex problems and contribute to innovative projects in a collaborative environment."></p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul class="scroll-animate">
+            <li>Mathematics-Informatics High School, Skopje</li>
+            <li>2021 – Present | GPA: 5.00 / 5.00</li>
+        </ul>
+            
+    </section>
+
+    <section id="competitions">
+        <h2>Competitions & Olympiads</h2>
+        <ul class="scroll-animate">
+            <li>European Girls’ Olympiad in Informatics (EGOI 2025) – Participant, Bonn, Germany – July 2025</li>
+            <li>Balkan Physics Olympiad – Honorable Mention, Montenegro – 2024</li>
+            <li>National Physics Tournaments – Multiple participations 2021–2025</li>
+            <li>National Mathematics Competitions – Multiple participations 2015–2024</li>
+            <li>National Programming Competitions (C++) 2022–2025</li>
+            <li>National Biology Competitions 2021–2022</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Research & Projects</h2>
+        <ul class="scroll-animate">
+            <li>Research Paper: 'Биокомпјутери и ДНК програмирање' – Co-author, 2025</li>
+            <li>Erasmus+ Project 'Digitally United', Brebu, Romania – Dec 2024 (Focus: AI and Digital Tools)</li>
+            <li>Erasmus+ Youth Exchange ‘The Art Of Games’, Gdynia, Poland – 2025</li>
+            <li>Kode With Klossy – Data Science Camp Project 2025 (SQL + Tableau: Vehicle Emissions & Renewable Energy)</li>
+        </ul>
+    </section>
+
+    <section id="volunteering">
+        <h2>Volunteering</h2>
+        <ul class="scroll-animate">
+            <li>IT Sector Volunteer – Shooting, European Youth Olympic Festival (EYOF Skopje 2025) – July 2025</li>
+            <li>Red Cross Volunteer, 2024</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="scroll-animate">
+            <li>Programming: C++ (preferred), Python (basic)</li>
+            <li>Data Visualization & Databases: Tableau, SQL</li>
+            <li>Languages: English (Fluent), German (A2–B1)</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Contact: elenatrifunoska2@gmail.com</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elena Trifunoska - Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" xintegrity="sha512-papX6jZC6ZbhPZVtK6rZq7RY0NJ6giUqE6v7E7oxD0CMx7Z0nYgA5gA8X/Hb0khj0E5pYk+V0N4a+o3Ef/njlQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <!-- Script to prevent "lightning strike" on page load -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark-mode') {
+                document.body.classList.add('dark-mode');
+            }
+        })();
+    </script>
+</head>
+<body>
+    <!-- The canvas element for the background effect -->
+    <canvas id="background-canvas"></canvas>
+
+    <nav class="navbar">
+        <a href="index.html"><img src="images/home.svg" class="nav-icon"> Home</a>
+        <a href="competitions.html"><img src="images/trophy.svg" class="nav-icon"> Competitions</a>
+        <a href="projects.html"><img src="images/projects.svg" class="nav-icon"> Projects</a>
+        <a href="skills.html"><img src="images/skills.svg" class="nav-icon"> Skills</a>
+        <a href="volunteering.html"><img src="images/volunteering.svg" class="nav-icon"> Volunteering</a>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </nav>
+
+    
+    <header>
+        <h1>My Projects</h1>
+    </header>
+
+    <section class="page-section">
+        <div class="cards-container">
+
+            <!-- Card 1 -->
+            <div class="card" data-target="popup1">
+                <h3>Research Paper: 'Биокомпјутери и ДНК програмирање'</h3>
+                <p>Co-author, 2025</p>
+            </div>
+            <div class="modal" id="popup1" role="dialog" aria-modal="true">
+                <div class="modal-content">
+                    <button class="modal-close" aria-label="Close">&times;</button>
+                    <h3>Research Paper: 'Биокомпјутери и ДНК програмирање'</h3>
+                    <p>Co-authored in 2025. Summary, objectives, and contributions go here.</p>
+                    <p><strong>Skills used:</strong> Python, C++, Bioinformatics, Research</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card" data-target="popup2">
+                <h3>Erasmus+ Project 'Digitally United'</h3>
+                <p>Brebu, Romania – Dec 2024</p>
+            </div>
+            <div class="modal" id="popup2" role="dialog" aria-modal="true">
+                <div class="modal-content">
+                    <button class="modal-close" aria-label="Close">&times;</button>
+                    <h3>Erasmus+ Project 'Digitally United'</h3>
+                    <p>Focus: AI and Digital Tools. Participated in Dec 2024 in Brebu, Romania.</p>
+                    <p><strong>Skills used:</strong> AI tooling, teamwork, programming</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card" data-target="popup3">
+                <h3>Erasmus+ Youth Exchange ‘The Art Of Games’</h3>
+                <p>Gdynia, Poland – 2025</p>
+            </div>
+            <div class="modal" id="popup3" role="dialog" aria-modal="true">
+                <div class="modal-content">
+                    <button class="modal-close" aria-label="Close">&times;</button>
+                    <h3>Erasmus+ Youth Exchange ‘The Art Of Games’</h3>
+                    <p>Participated in 2025 in Gdynia, Poland. Focused on game design and collaboration.</p>
+                    <p><strong>Skills used:</strong> Creativity, project management, teamwork</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card" data-target="popup4">
+                <h3>Kode With Klossy – Data Science Camp Project</h3>
+                <p>2025</p>
+            </div>
+            <div class="modal" id="popup4" role="dialog" aria-modal="true">
+                <div class="modal-content">
+                    <button class="modal-close" aria-label="Close">&times;</button>
+                    <h3>Kode With Klossy – Data Science Camp Project</h3>
+                    <p>2025 project using SQL and Tableau to analyze vehicle emissions and renewable energy.</p>
+                    <p><strong>Skills used:</strong> SQL, Tableau, data analysis, presentation</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact: elenatrifunoska2@gmail.com</p>
+    </footer>
+</body>
+</html>

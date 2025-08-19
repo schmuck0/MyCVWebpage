@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elena Trifunoska - Volunteering</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-papX6jZC6ZbhPZVtK6rZq7RY0NJ6giUqE6v7E7oxD0CMx7Z0nYgA5gA8X/Hb0khj0E5pYk+V0N4a+o3Ef/njlQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <!-- Script to prevent "lightning strike" on page load -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark-mode') {
+                document.body.classList.add('dark-mode');
+            }
+        })();
+    </script>
+</head>
+<body>
+    <!-- The canvas element for the background effect -->
+    <canvas id="background-canvas"></canvas>
+
+    <nav class="navbar">
+    	<a href="index.html"><img src="images/home.svg" class="nav-icon"> Home</a>
+    	<a href="competitions.html"><img src="images/trophy.svg" class="nav-icon"> Competitions</a>
+    	<a href="projects.html"><img src="images/projects.svg" class="nav-icon"> Projects</a>
+    	<a href="skills.html"><img src="images/skills.svg" class="nav-icon"> Skills</a>
+    	<a href="volunteering.html"><img src="images/volunteering.svg" class="nav-icon"> Volunteering</a>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </nav>
+
+    <header>
+        <h1>My Volunteering Contributions</h1>
+    </header>
+    
+    <section class="page-section">
+    
+    	<div class="cards-container">
+            <!-- Card 1 (IT Sector Volunteer) -->
+            <div class="card" data-target="popup1">
+                <h3>IT Sector Volunteer – Shooting</h3>
+                <p>European Youth Olympic Festival (EYOF Skopje 2025) – July 2025</p>
+            </div>
+            <div class="modal" id="popup1" role="dialog" aria-modal="true">
+                <div class="modal-content">
+                    <button class="modal-close" aria-label="Close">&times;</button>
+                    <h3>IT Sector Volunteer – Shooting</h3>
+                    <p>I volunteered in the IT sector at the European Youth Olympic Festival in Skopje. This was a truly large and exciting event, and I was specifically assigned to assist with the technology for the Shooting competition. It was an incredible experience that allowed me to apply my skills while making many new friends and being a part of this amazing community event.</p>
+                    <p> <a href="https://skopje2025.sporteurope.org/">EYOF25</a></p>
+                    <p><strong>Skills used:</strong> IT support, teamwork, communication, event management</p>
+                </div>
+            </div>
+
+            <!-- Card 2 (Red Cross Volunteer) -->
+            <div class="card" data-target="popup2">
+                <h3>Red Cross Volunteer</h3>
+                <p>2024</p>
+            </div>
+            <div class="modal" id="popup2" role="dialog" aria-modal="true">
+                <div class="modal-content">
+                    <button class="modal-close" aria-label="Close">&times;</button>
+                    <h3>Red Cross Volunteer</h3>
+                    <p>I have been a dedicated Red Cross Volunteer since 2024. My work has included participating in a significant blood donation event, which reinforced the importance of community health. Being a part of the Red Cross community is a meaningful experience that allows me to contribute to a cause I deeply care about.</p>
+                    <p><strong>Skills used:</strong> Community engagement, organization, compassion, public relations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>Contact: elenatrifunoska2@gmail.com</p>
+    </footer>
+</body>
+</html>

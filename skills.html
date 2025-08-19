@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elena Trifunoska - Skills </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-papX6jZC6ZbhPZVtK6rZq7RY0NJ6giUqE6v7E7oxD0CMx7Z0nYgA5gA8X/Hb0khj0E5pYk+V0N4a+o3Ef/njlQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <!-- Script to prevent "lightning strike" on page load -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark-mode') {
+                document.body.classList.add('dark-mode');
+            }
+        })();
+    </script>
+</head>
+<body>
+    <!-- The canvas element for the background effect -->
+    <canvas id="background-canvas"></canvas>
+
+    <nav class="navbar">
+    	<a href="index.html"><img src="images/home.svg" class="nav-icon"> Home</a>
+    	<a href="competitions.html"><img src="images/trophy.svg" class="nav-icon"> Competitions</a>
+    	<a href="projects.html"><img src="images/projects.svg" class="nav-icon"> Projects</a>
+    	<a href="skills.html"><img src="images/skills.svg" class="nav-icon"> Skills</a>
+    	<a href="volunteering.html"><img src="images/volunteering.svg" class="nav-icon"> Volunteering</a>
+    	<button id="theme-toggle">🌙 Dark Mode</button>
+    </nav>
+
+    <header>
+        <h1>My Skills</h1>
+    </header>
+
+    <section class="page-section">
+    
+    <div class="cards-container">
+        <!-- Card 1 (Programming) -->
+        <div class="card" data-target="popup1">
+            <h3>Programming</h3>
+            <p>C++ (preferred), Python (basic)</p>
+        </div>
+        <div class="modal" id="popup1" role="dialog" aria-modal="true">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close">&times;</button>
+                <h3>Programming</h3>
+                <p>I have a strong foundation in C++, which I prefer for its performance and use in competitive programming. My experience also includes Python, which I've applied to tasks in data science and bioinformatics, providing a versatile skill set for various technical challenges.</p>
+                <p><strong>Skills used:</strong> C++, Python, problem-solving, data structures, algorithms</p>
+            </div>
+        </div>
+
+        <!-- Card 2 (Data Visualization & Databases) -->
+        <div class="card" data-target="popup2">
+            <h3>Data Visualization & Databases </h3>
+            <p>Tableau, SQL</p>
+        </div>
+        <div class="modal" id="popup2" role="dialog" aria-modal="true">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close">&times;</button>
+                <h3>Data Visualization & Databases</h3>
+                <p>I am proficient in using SQL to manage and query relational databases, and I use Tableau to transform complex datasets into clear, interactive dashboards. This expertise allows me to analyze and present information effectively, as demonstrated in my Kode With Klossy project on vehicle emissions and renewable energy.</p>
+                <p><strong>Skills used:</strong> SQL, Tableau, data analysis, data visualization</p>
+            </div>
+        </div>
+
+        <!-- Card 3 (Languages) -->
+        <div class="card" data-target="popup3">
+            <h3>Languages</h3>
+            <p>English (Fluent), German (A2–B1)</p>
+        </div>
+        <div class="modal" id="popup3" role="dialog" aria-modal="true">
+            <div class="modal-content">
+                <button class="modal-close" aria-label="Close">&times;</button>
+                <h3>Languages</h3>
+                <p>I am a fluent speaker of English and have achieved an A2-B1 proficiency level in German. This multilingual ability is a significant asset in my international academic and project collaborations, and it demonstrates my commitment to continuous learning.</p>
+                <p><strong>Skills used:</strong> Multilingual proficiency, communication, global collaboration</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <footer>
+        <p>Contact: elenatrifunoska2@gmail.com</p>
+    </footer>
+</body>
+</html>
